@@ -4,7 +4,7 @@ using System.Collections;
 public class Jump : MonoBehaviour
 {
     public Vector3 jump;
-    public float jumpForce = 2.0f;
+    public float jumpForce = 10.0f;
     public bool isGrounded;
     Rigidbody rb;
     void Start()
