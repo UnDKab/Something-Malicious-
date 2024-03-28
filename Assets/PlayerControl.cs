@@ -13,15 +13,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ѕолучаем направление движени€ от клавиш WASD, независимо от направлени€ камеры
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        // ѕолучаем направление движени€ от клавиш WASD, независимо от направлени€ камеры
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
         // ѕолучаем направление движени€ относительно направлени€ камеры
-        Vector3 worldDirection = Camera.main.transform.TransformDirection(direction);
-        worldDirection.y = 0f; // ћы не хотим, чтобы персонаж двигалс€ вверх или вниз
+        Vector3 cameraForward = Camera.main.transform.forward;
+        Vector3 cameraRight = Camera.main.transform.right;
+        cameraForward.y = 0f;
+        cameraRight.y = 0f;
+        Vector3 worldDirection = (cameraForward * vertical + cameraRight * horizontal).normalized;
 
         // –ывок
         if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastDashTime > dashCooldown)
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(worldDirection * speed * Time.deltaTime, Space.World);
         }
     }
+
     IEnumerator Dash()
     {
         isDashing = true;
