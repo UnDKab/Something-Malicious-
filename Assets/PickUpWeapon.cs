@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpWeapon : MonoBehaviour
@@ -8,20 +6,30 @@ public class PickUpWeapon : MonoBehaviour
     public float distance = 15f;
     GameObject currentWeapon;
     bool canPickUp = false;
+    PlayerAttack playerAttack; // —сылка на компонент PlayerAttack
 
-    
+    void Start()
+    {
+
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)) PickUp();
         if (Input.GetKeyDown(KeyCode.Q)) Drop();
+        playerAttack = FindObjectOfType<PlayerAttack>();
+        if (playerAttack == null)
+        {
+            Debug.LogError("PlayerAttack component not found!");
+        }
     }
 
     void PickUp()
     {
         RaycastHit hit;
-        if(Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, distance))
+        if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, distance))
         {
-            if(hit.transform.tag == "Weapon")
+            if (hit.transform.tag == "Weapon")
             {
                 if (canPickUp) Drop();
 
@@ -32,6 +40,15 @@ public class PickUpWeapon : MonoBehaviour
                 currentWeapon.transform.localPosition = Vector3.zero;
                 currentWeapon.transform.localEulerAngles = new Vector3(0f, -90f, 0f);
                 canPickUp = true;
+
+                if (playerAttack != null)
+                {
+                    playerAttack.attackPoint = currentWeapon.transform.Find("AttackPoint");
+                    if (playerAttack.attackPoint == null)
+                    {
+                        Debug.LogError("AttackPoint not found on the picked up weapon!");
+                    }
+                }
             }
         }
     }
@@ -43,6 +60,10 @@ public class PickUpWeapon : MonoBehaviour
         currentWeapon.GetComponent<Collider>().isTrigger = false;
         canPickUp = false;
         currentWeapon = null;
-    }
 
+        if (playerAttack != null)
+        {
+            playerAttack.attackPoint = null;
+        }
+    }
 }

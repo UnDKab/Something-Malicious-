@@ -13,8 +13,6 @@ public class PlayerStats : MonoBehaviour
     // Параметры масок
     public enum MaskType { Clean, Thief, Jester, Chaos }
     public MaskType currentMask = MaskType.Clean;
-
-    // Событие для обновления интерфейса или других систем при изменении статов
     public event Action OnStatsChanged;
 
     // Метод для применения маски к игроку
@@ -53,7 +51,6 @@ public class PlayerStats : MonoBehaviour
                 break;
         }
 
-        // Вызываем событие обновления статов
         if (OnStatsChanged != null)
             OnStatsChanged.Invoke();
     }
@@ -67,22 +64,37 @@ public class PlayerStats : MonoBehaviour
     // Дополнительный эффект маски вора
     private void DropExtraItem()
     {
-        // Реализация кода для падения дополнительного предмета
         Debug.Log("Extra item dropped!");
     }
 
-    // Вызывается каждый кадр
+    // Метод для получения урона
+    public void TakeDamage(int damage)
+    {
+        healthPoints -= damage;
+
+        if (healthPoints <= 0)
+        {
+            Die();
+        }
+
+        if (OnStatsChanged != null)
+            OnStatsChanged.Invoke();
+    }
+
+    // Метод смерти
+    private void Die()
+    {
+    }
+
     private void Update()
     {
-        // Вызываем событие обновления статов при изменении маски
         if (Input.GetKeyDown(KeyCode.I))
         {
-            ApplyMask(MaskType.Thief); // Пример применения маски по нажатию клавиши
+            ApplyMask(MaskType.Thief);
         }
     }
 }
 
-// Пример скрипта для обновления интерфейса
 public class UIManager : MonoBehaviour
 {
     public Text healthText;
@@ -93,9 +105,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        // Подписываемся на событие обновления статов игрока
         playerStats.OnStatsChanged += UpdateStatsUI;
-        // Инициализируем UI с текущими статами
         UpdateStatsUI();
     }
 

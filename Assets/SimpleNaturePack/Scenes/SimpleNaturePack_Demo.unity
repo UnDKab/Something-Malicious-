@@ -4403,6 +4403,7 @@ GameObject:
   - component: {fileID: 735973920}
   - component: {fileID: 735973919}
   - component: {fileID: 735973918}
+  - component: {fileID: 735973921}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -4567,6 +4568,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcStats: {fileID: 735973918}
+--- !u!114 &735973921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735973909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0729e54c311d44147b8180a164662782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 10
 --- !u!1001 &739732976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8963,6 +8982,7 @@ GameObject:
   - component: {fileID: 1735584867}
   - component: {fileID: 1735584859}
   - component: {fileID: 1735584868}
+  - component: {fileID: 1735584869}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -9026,7 +9046,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!23 &1735584863
 MeshRenderer:
@@ -9132,6 +9152,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1735584869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735584858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254b1839ebb96904d8418d7f6427d312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  attackRange: 2
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1736731160
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -61,10 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\WeaponController.cs" />
+    <Compile Include="Assets\NpcAttack.cs" />
     <Compile Include="Assets\NPCStats.cs" />
     <Compile Include="Assets\PlayerControl.cs" />
     <Compile Include="Assets\MouseCamera.cs" />
     <Compile Include="Assets\Jump.cs" />
+    <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\GoblinControl.cs" />
     <Compile Include="Assets\Stats.cs" />
     <Compile Include="Assets\PickUpWeapon.cs" />
