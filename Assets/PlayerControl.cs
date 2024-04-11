@@ -1,12 +1,13 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 50f;
+    public PlayerStats playerStats; // Ссылка на скрипт PlayerStats
+
     public float dashDistance = 5f;
     public float dashCooldown = 4f;
-    public float runSpeedMultiplier = 2f; // Множитель скорости бега
+    public float runSpeedMultiplier = 2.0f; // Множитель скорости бега
     private bool isDashing = false;
     private bool isRunning = false;
     private float lastDashTime = -999f;
@@ -14,6 +15,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerStats == null)
+        {
+            Debug.LogError("PlayerStats reference is not set in PlayerController!");
+            return;
+        }
+
+        float speed = playerStats.movementSpeed; // Получаем значение скорости из PlayerStats
+
         // Получаем направление движения от клавиш WASD, независимо от направления камеры
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -63,6 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         isDashing = true;
         lastDashTime = Time.time;
+        float speed = playerStats.movementSpeed; // Получаем скорость из PlayerStats
         Vector3 dashDestination = transform.position + Camera.main.transform.forward * dashDistance;
 
         while (Vector3.Distance(transform.position, dashDestination) > 0.1f)

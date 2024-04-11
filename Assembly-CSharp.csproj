@@ -64,6 +64,7 @@
     <Compile Include="Assets\PlayerControl.cs" />
     <Compile Include="Assets\MouseCamera.cs" />
     <Compile Include="Assets\Jump.cs" />
+    <Compile Include="Assets\PlayerStats.cs" />
     <Compile Include="Assets\PickUpWeapon.cs" />
   </ItemGroup>
   <ItemGroup>

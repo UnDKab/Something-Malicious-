@@ -356,6 +356,7 @@
 "Assets/MouseCamera.cs"
 "Assets/PickUpWeapon.cs"
 "Assets/PlayerControl.cs"
+"Assets/PlayerStats.cs"
 "Assets/WeaponController.cs"
 -langversion:9.0
 
