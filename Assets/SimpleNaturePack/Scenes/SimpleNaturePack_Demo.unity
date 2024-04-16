@@ -2644,8 +2644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0304a48a5244cbffc3e72d2edd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turn: {x: 0, y: 0}
   sensitivity: 0.5
+  playerBody: {fileID: 1735584865}
 --- !u!81 &403458321
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8985,7 +8985,7 @@ GameObject:
   - component: {fileID: 1735584869}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9046,7 +9046,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!23 &1735584863
 MeshRenderer:

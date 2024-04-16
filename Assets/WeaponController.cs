@@ -34,17 +34,12 @@ public class WeaponController : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            // Получить компонент PlayerAttack
-            PlayerAttack playerAttack = player.GetComponent<PlayerAttack>();
-            if (playerAttack != null)
-            {
-                // Установить attackPoint для PlayerAttack
-                playerAttack.attackPoint = attackPoint.transform;
-            }
-            else
-            {
-                Debug.LogError("PlayerAttack component not found!");
-            }
+            // Делаем оружие дочерним объектом тела игрока
+            weaponInstance.transform.parent = player.transform;
+
+            // Перемещаем оружие в нужную позицию относительно тела игрока
+            weaponInstance.transform.localPosition = Vector3.zero; // Переместить оружие в центр тела игрока или на другую позицию, если нужно
+            weaponInstance.transform.localRotation = Quaternion.identity; // Сбросить поворот оружия
         }
         else
         {

@@ -7,7 +7,6 @@ public class PickUpWeapon : MonoBehaviour
     GameObject currentWeapon;
     bool canPickUp = false;
     PlayerAttack playerAttack; // —сылка на компонент PlayerAttack
-
     void Start()
     {
 
@@ -40,7 +39,6 @@ public class PickUpWeapon : MonoBehaviour
                 currentWeapon.transform.localPosition = Vector3.zero;
                 currentWeapon.transform.localEulerAngles = new Vector3(0f, -90f, 0f);
                 canPickUp = true;
-
                 if (playerAttack != null)
                 {
                     playerAttack.attackPoint = currentWeapon.transform.Find("AttackPoint");
