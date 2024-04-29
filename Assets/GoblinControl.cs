@@ -76,11 +76,14 @@ public class GoblinControl : MonoBehaviour
         // Анимация атаки
         animator.SetTrigger("Attack");
 
-        // Добавьте логику атаки цели
         Debug.Log("Goblin attacks the target!");
 
-        // Например, вызвать метод получения урона у цели (зависит от вашего кода игрока)
         target.GetComponent<Player>().TakeDamage(NPCStats.damage);
+        if (Vector3.Distance(transform.position, target.position) > attackRange)
+        {
+            animator.ResetTrigger("Attack");
+            animator.SetBool("IsRunning", true);
+        }
     }
 
     void MoveTowardsTarget()

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\goblincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,16 +126,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeDocumentMoniker": "Assets\\Stats.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeToolTip": "Assets\\Stats.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAiwG8AAAAgAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwGkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:10:21.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T15:10:21.966Z"
             },
             {
               "$type": "Document",
@@ -145,22 +144,23 @@
               "RelativeDocumentMoniker": "Assets\\GoblinControl.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\GoblinControl.cs",
               "RelativeToolTip": "Assets\\GoblinControl.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAswGcAAAAkAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAuwFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T14:42:55.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "NPCStats.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\NPCStats.cs",
               "RelativeDocumentMoniker": "Assets\\NPCStats.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\NPCStats.cs",
               "RelativeToolTip": "Assets\\NPCStats.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T14:39:12.466Z"
+              "WhenOpened": "2024-04-11T14:39:12.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
