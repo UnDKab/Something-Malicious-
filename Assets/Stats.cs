@@ -1,118 +1,115 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
 
-public class PlayerStats : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    // Статы игрока
-    public int healthPoints = 100;
-    public int manaPoints = 100;
-    public float movementSpeed = 5.0f;
-    public bool hasPassiveSkill = false;
+    public float HealthPoints { get; set; } = 100.0f;
+    public float ManaPoints { get; set; } = 100.0f;
+    public float MovementSpeed { get; set; } = 5.0f;
+    public bool HasPassiveSkill { get; set; } = false;
 
-    // Параметры масок
-    public enum MaskType { Clean, Thief, Jester, Chaos }
-    public MaskType currentMask = MaskType.Clean;
     public event Action OnStatsChanged;
 
-    // Метод для применения маски к игроку
-    public void ApplyMask(MaskType mask)
+    private void Update()
     {
-        currentMask = mask; // Установка текущей маски
-
-        // Применяем эффекты маски в зависимости от выбранной маски
-        switch (mask)
+        // Применение маски мага при нажатии клавиши O
+        if (Input.GetKeyDown(KeyCode.O))
         {
-            case MaskType.Clean:
-                healthPoints = 100;
-                manaPoints = 100;
-                movementSpeed = 5.0f;
-                hasPassiveSkill = false;
-                break;
-            case MaskType.Thief:
-                healthPoints = 50;
-                manaPoints = 100;
-                movementSpeed = 7.5f;
-                hasPassiveSkill = true;
-                // Дополнительный эффект маски вора
-                DropExtraItem();
-                break;
-            case MaskType.Jester:
-                healthPoints = UnityEngine.Random.Range(1, 301);
-                manaPoints = UnityEngine.Random.Range(1, 301);
-                movementSpeed = UnityEngine.Random.Range(3.0f, 10.0f);
-                hasPassiveSkill = false;
-                break;
-            case MaskType.Chaos:
-                // Применить случайную маску
-                ApplyMask((MaskType)UnityEngine.Random.Range(0, 3));
-                break;
-            default:
-                break;
+            ApplyMask(new WizardMask());
         }
 
-        if (OnStatsChanged != null)
-            OnStatsChanged.Invoke();
+        // Перезапуск игры при нажатии клавиши R
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartGame();
+        }
+
+        // Пример применения маски вора при нажатии клавиши I
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ApplyMask(new ThiefMask());
+        }
     }
 
-    // Метод для сброса маски к чистой
-    public void ResetMask()
+    public void ApplyMask(IMask mask)
     {
-        ApplyMask(MaskType.Clean);
-    }
-
-    // Дополнительный эффект маски вора
-    private void DropExtraItem()
-    {
-        Debug.Log("Extra item dropped!");
+        mask.ApplyMask(this);
+        OnStatsChanged?.Invoke();
     }
 
     // Метод для получения урона
     public void TakeDamage(int damage)
     {
-        healthPoints -= damage;
+        HealthPoints -= damage;
 
-        if (healthPoints <= 0)
+        if (HealthPoints <= 0)
         {
             Die();
         }
 
-        if (OnStatsChanged != null)
-            OnStatsChanged.Invoke();
+        OnStatsChanged?.Invoke();
     }
 
-    // Метод смерти
+    // Логика смерти игрока
     private void Die()
     {
+        Debug.Log("Player has died!");
+
+        // Здесь вы можете добавить дополнительную логику для смерти игрока, например, отображение экрана смерти.
+
+        // Перезапуск игры
+        RestartGame();
     }
 
-    private void Update()
+    // Перезапуск игры
+    private void RestartGame()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            ApplyMask(MaskType.Thief);
-        }
+        // Перезапуск текущего уровня
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    // Метод для обновления UI
+    public void UpdateStatsUI(Text healthText, Text manaText, Text speedText)
+    {
+        healthText.text = "Health: " + HealthPoints;
+        manaText.text = "Mana: " + ManaPoints;
+        speedText.text = "Speed: " + MovementSpeed;
     }
 }
 
-public class UIManager : MonoBehaviour
+// Интерфейс для всех масок
+public interface IMask
 {
-    public Text healthText;
-    public Text manaText;
-    public Text speedText;
+    void ApplyMask(Player player);
+}
 
-    public PlayerStats playerStats;
-
-    private void Start()
+// Класс маски вора
+public class ThiefMask : IMask
+{
+    public void ApplyMask(Player player)
     {
-        playerStats.OnStatsChanged += UpdateStatsUI;
-        UpdateStatsUI();
+        player.HealthPoints = 70.0f;
+        player.ManaPoints = 100.0f;
+        player.MovementSpeed = 7.5f;
+        player.HasPassiveSkill = true;
+        DropExtraItem();
     }
 
-    private void UpdateStatsUI()
+    private void DropExtraItem()
     {
-        healthText.text = "Health: " + playerStats.healthPoints;
-        manaText.text = "Mana: " + playerStats.manaPoints;
-        speedText.text = "Speed: " + playerStats.movementSpeed;
+        Debug.Log("Extra item dropped!");
+    }
+}
+
+// Класс маски мага
+public class WizardMask : IMask
+{
+    public void ApplyMask(Player player)
+    {
+        player.HealthPoints = 50.0f;
+        player.ManaPoints = 150.0f;
+        player.MovementSpeed = 3.0f;
+        player.HasPassiveSkill = false;
     }
 }

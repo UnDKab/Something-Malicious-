@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\ezio5\\dev_test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\mousecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\mousecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\npcattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\npcattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\goblincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\goblincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\npcstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\npcattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\npcattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\mousecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\mousecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,20 +50,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "Jump.cs",
+              "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Jump.cs",
+              "RelativeDocumentMoniker": "Assets\\Jump.cs",
+              "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Jump.cs",
+              "RelativeToolTip": "Assets\\Jump.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:59:28.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MouseCamera.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\MouseCamera.cs",
               "RelativeDocumentMoniker": "Assets\\MouseCamera.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\MouseCamera.cs",
               "RelativeToolTip": "Assets\\MouseCamera.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T07:43:58.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T07:43:58.077Z"
             },
             {
               "$type": "Document",
@@ -69,14 +84,13 @@
               "RelativeDocumentMoniker": "Assets\\NpcAttack.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\NpcAttack.cs",
               "RelativeToolTip": "Assets\\NpcAttack.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA6wCYAAAAfAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:55:11.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T15:55:11.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerAttack.cs",
@@ -88,78 +102,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "WeaponController.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\WeaponController.cs",
               "RelativeDocumentMoniker": "Assets\\WeaponController.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\WeaponController.cs",
               "RelativeToolTip": "Assets\\WeaponController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAqwDQAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwB4AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:12:59.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T15:12:59.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "PickUpWeapon.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\PickUpWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\PickUpWeapon.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\PickUpWeapon.cs",
               "RelativeToolTip": "Assets\\PickUpWeapon.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:12:05.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T15:12:05.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeDocumentMoniker": "Assets\\Stats.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeToolTip": "Assets\\Stats.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAuwHYAAAAAAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAiwG8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:10:21.966Z"
+              "WhenOpened": "2024-04-11T15:10:21.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "GoblinControl.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\GoblinControl.cs",
               "RelativeDocumentMoniker": "Assets\\GoblinControl.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\GoblinControl.cs",
               "RelativeToolTip": "Assets\\GoblinControl.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwDoAAAAAAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAswGcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T14:42:55.513Z"
+              "WhenOpened": "2024-04-11T14:42:55.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "NPCStats.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\NPCStats.cs",
               "RelativeDocumentMoniker": "Assets\\NPCStats.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\NPCStats.cs",
               "RelativeToolTip": "Assets\\NPCStats.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T14:39:12.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerControl.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\PlayerControl.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAqwFYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:52:37.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T09:52:37.87Z"
             }
           ]
         }

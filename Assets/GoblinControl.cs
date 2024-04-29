@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class GoblinControl : MonoBehaviour
 {
-    public NPCStats npcStats;
+    public NPCStats NPCStats;
+    public Transform target; // Ссылка на цель (например, на игрока)
+    public float attackRange = 2f; // Дистанция атаки
+    public Animator animator; // Ссылка на компонент Animator
 
     private Rigidbody rb;
 
@@ -10,41 +13,95 @@ public class GoblinControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        if (npcStats == null)
+        if (NPCStats == null)
         {
             Debug.LogError("NPCStats is not assigned to GoblinControl!");
             return;
         }
-        npcStats.SetStatsForNPCType(npcStats.npcType);
+        NPCStats.SetStatsForNPCType(NPCStats.npcType);
+
+        // Убедитесь, что animator установлен
+        if (animator == null)
+        {
+            Debug.LogError("Animator is not assigned to GoblinControl!");
+            return;
+        }
     }
 
     void Update()
     {
-        MoveRandomly();
+        if (target == null)
+        {
+            // Поиск цели, если она не установлена
+            FindTarget();
+        }
+
+        if (target != null)
+        {
+            // Если цель найдена, атакуйте ее
+            AttackTarget();
+        }
     }
 
-    void MoveRandomly()
+    void FindTarget()
     {
-        if (npcStats == null)
+        // Поиск цели в пределах определенного диапазона (например, игрока)
+        Player[] players = FindObjectsOfType<Player>();
+        if (players.Length > 0)
         {
-            Debug.LogError("NPCStats is not assigned to GoblinControl!");
-            return;
+            // Установите первую найденную цель
+            target = players[0].transform;
         }
-        float movementSpeed = npcStats.movementSpeed;
-        Vector3 randomDirection = Random.insideUnitSphere * 10f;
-        randomDirection.y = 0f;
-        Vector3 destination = transform.position + randomDirection;
+    }
 
-        transform.LookAt(destination);
+    void AttackTarget()
+    {
+        // Вычислите расстояние до цели
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-        rb.MovePosition(Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime));
+        if (distanceToTarget <= attackRange)
+        {
+            // Если цель в пределах дистанции атаки, атакуйте
+            Attack();
+        }
+        else
+        {
+            // Если цель вне дистанции атаки, двигайтесь к ней
+            MoveTowardsTarget();
+        }
+    }
+
+    void Attack()
+    {
+        // Анимация атаки
+        animator.SetTrigger("Attack");
+
+        // Добавьте логику атаки цели
+        Debug.Log("Goblin attacks the target!");
+
+        // Например, вызвать метод получения урона у цели (зависит от вашего кода игрока)
+        target.GetComponent<Player>().TakeDamage(NPCStats.damage);
+    }
+
+    void MoveTowardsTarget()
+    {
+        // Анимация бега
+        animator.SetBool("IsRunning", true);
+
+        // Двигайтесь к цели
+        float movementSpeed = NPCStats.movementSpeed;
+        Vector3 directionToTarget = (target.position - transform.position).normalized;
+        rb.MovePosition(transform.position + directionToTarget * movementSpeed * Time.deltaTime);
+
+        // Убедитесь, что анимация бега отключается, когда гоблин не бежит
+        animator.SetBool("IsRunning", false);
     }
 
     // Метод для получения урона
     public void TakeDamage(int damage)
     {
-        npcStats.maxHealth -= damage;
-        if (npcStats.maxHealth <= 0)
+        NPCStats.maxHealth -= damage;
+        if (NPCStats.maxHealth <= 0)
         {
             Die();
         }

@@ -25,7 +25,7 @@ public class NPCAttack : MonoBehaviour
         foreach (Collider player in hitPlayers)
         {
             // Получаем компонент PlayerStats игрока
-            PlayerStats playerStats = player.GetComponent<PlayerStats>();
+            Player playerStats = player.GetComponent<Player>();
 
             // Если компонент PlayerStats существует, наносим игроку урон
             if (playerStats != null)

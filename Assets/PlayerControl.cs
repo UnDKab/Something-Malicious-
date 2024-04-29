@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public PlayerStats playerStats; // Ссылка на скрипт PlayerStats
+    public Player player; // Ссылка на скрипт Player
 
     public float dashDistance = 5f;
     public float dashCooldown = 4f;
@@ -15,13 +15,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerStats == null)
+        if (player == null)
         {
-            Debug.LogError("PlayerStats reference is not set in PlayerController!");
+            Debug.LogError("Player reference is not set in PlayerController!");
             return;
         }
 
-        float speed = playerStats.movementSpeed; // Получаем значение скорости из PlayerStats
+        float speed = player.MovementSpeed; // Получаем значение скорости из PlayerStats
 
         // Получаем направление движения от клавиш WASD, независимо от направления камеры
         float horizontal = Input.GetAxis("Horizontal");
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         isDashing = true;
         lastDashTime = Time.time;
-        float speed = playerStats.movementSpeed; // Получаем скорость из PlayerStats
+        float speed = player.MovementSpeed; // Получаем скорость из PlayerStats
         Vector3 dashDestination = transform.position + Camera.main.transform.forward * dashDistance;
 
         while (Vector3.Distance(transform.position, dashDestination) > 0.1f)
