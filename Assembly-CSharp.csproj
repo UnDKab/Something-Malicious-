@@ -61,20 +61,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\WeaponController.cs" />
+    <Compile Include="Assets\FantasyEnvironments\Environments\Town\Scripts\Door.cs" />
     <Compile Include="Assets\NpcAttack.cs" />
     <Compile Include="Assets\NPCStats.cs" />
     <Compile Include="Assets\PlayerControl.cs" />
     <Compile Include="Assets\MouseCamera.cs" />
+    <Compile Include="Assets\Polytope Studio\Lowpoly_Demos\Environment_Free\Helpers\MouseLook.cs" />
     <Compile Include="Assets\Jump.cs" />
     <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\GoblinControl.cs" />
     <Compile Include="Assets\WeaponModel.cs" />
+    <Compile Include="Assets\Polytope Studio\Lowpoly_Demos\Environment_Free\Helpers\PlayerMovement.cs" />
     <Compile Include="Assets\Stats.cs" />
     <Compile Include="Assets\PickUpWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AnimeGirls\BaseCharacter\BaseCharacter\Sourcefiles\Shader\DoubleSided.shader" />
-    <None Include="Assets\AnimeGirls\BaseCharacter\BaseCharacter\Sourcefiles\Shader\UnlitColor.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Village\Sources\Shaders\PT_Buildings_Shader_PBR.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Water_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Rock_Shader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

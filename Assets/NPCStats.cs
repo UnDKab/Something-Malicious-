@@ -27,7 +27,7 @@ public class NPCStats : MonoBehaviour
             case NPCType.Goblin:
                 movementSpeed = 3f;
                 maxHealth = 100;
-                damage = 2;
+                damage = 0;
                 break;
             case NPCType.Skeleton:
                 movementSpeed = 2f;
