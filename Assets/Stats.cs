@@ -13,19 +13,16 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        // Применение маски мага при нажатии клавиши O
         if (Input.GetKeyDown(KeyCode.O))
         {
             ApplyMask(new WizardMask());
         }
 
-        // Перезапуск игры при нажатии клавиши R
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartGame();
         }
 
-        // Пример применения маски вора при нажатии клавиши I
         if (Input.GetKeyDown(KeyCode.I))
         {
             ApplyMask(new ThiefMask());
@@ -56,8 +53,6 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player has died!");
 
-        // Здесь вы можете добавить дополнительную логику для смерти игрока, например, отображение экрана смерти.
-
         // Перезапуск игры
         RestartGame();
     }
@@ -69,7 +64,6 @@ public class Player : MonoBehaviour
         Application.LoadLevel(Application.loadedLevel);
     }
 
-    // Метод для обновления UI
     public void UpdateStatsUI(Text healthText, Text manaText, Text speedText)
     {
         healthText.text = "Health: " + HealthPoints;
@@ -78,13 +72,11 @@ public class Player : MonoBehaviour
     }
 }
 
-// Интерфейс для всех масок
 public interface IMask
 {
     void ApplyMask(Player player);
 }
 
-// Класс маски вора
 public class ThiefMask : IMask
 {
     public void ApplyMask(Player player)
@@ -102,7 +94,6 @@ public class ThiefMask : IMask
     }
 }
 
-// Класс маски мага
 public class WizardMask : IMask
 {
     public void ApplyMask(Player player)

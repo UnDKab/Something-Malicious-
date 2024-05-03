@@ -6,20 +6,28 @@ public class PickUpWeapon : MonoBehaviour
     public float distance = 15f;
     GameObject currentWeapon;
     bool canPickUp = false;
-    PlayerAttack playerAttack; // Ссылка на компонент PlayerAttack
-    void Start()
-    {
-
-    }
+    PlayerAttack playerAttack;
+    WeaponController weaponController; // Добавляем ссылку на WeaponController
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)) PickUp();
         if (Input.GetKeyDown(KeyCode.Q)) Drop();
-        playerAttack = FindObjectOfType<PlayerAttack>();
         if (playerAttack == null)
         {
-            Debug.LogError("PlayerAttack component not found!");
+            playerAttack = FindObjectOfType<PlayerAttack>();
+            if (playerAttack == null)
+            {
+                Debug.LogError("PlayerAttack component not found!");
+            }
+        }
+        if (weaponController == null)
+        {
+            weaponController = FindObjectOfType<WeaponController>();
+            if (weaponController == null)
+            {
+                Debug.LogError("WeaponController component not found!");
+            }
         }
     }
 
@@ -46,6 +54,7 @@ public class PickUpWeapon : MonoBehaviour
                     {
                         Debug.LogError("AttackPoint not found on the picked up weapon!");
                     }
+                    playerAttack.weaponController = weaponController; // Передаем ссылку на WeaponController
                 }
             }
         }
@@ -62,6 +71,7 @@ public class PickUpWeapon : MonoBehaviour
         if (playerAttack != null)
         {
             playerAttack.attackPoint = null;
+            playerAttack.weaponController = null; // Сбрасываем ссылку на WeaponController
         }
     }
 }

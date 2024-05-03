@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     private bool isRunning = false;
     private float lastDashTime = -999f;
 
-    // Update is called once per frame
     void Update()
     {
         if (player == null)

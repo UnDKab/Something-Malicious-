@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public Transform attackPoint; // точка, откуда будет происходить атака
+    public Transform attackPoint;
     public float attackRange = 1f;
     public LayerMask enemyLayers;
+    public WeaponController weaponController;
 
     void Update()
     {
-        // Проверяем, была ли нажата кнопка для атаки
         if (Input.GetButtonDown("Fire1"))
         {
             Attack();
@@ -23,24 +23,29 @@ public class PlayerAttack : MonoBehaviour
             return;
         }
 
-        // Обнаруживаем всех врагов в радиусе атаки
+        if (weaponController == null)
+        {
+            Debug.LogError("No weapon equipped!");
+            return;
+        }
+
+        // Получаем общий урон из WeaponController
+        float totalDamage = weaponController.TotalDamage;
+
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
 
-        // Наносим урон каждому обнаруженному врагу
         foreach (Collider enemy in hitEnemies)
         {
-            // Получаем компонент GoblinControl врага
             GoblinControl goblinControl = enemy.GetComponent<GoblinControl>();
 
-            // Если компонент GoblinControl врага существует, наносим ему урон
             if (goblinControl != null)
             {
-                goblinControl.TakeDamage(10); // Предполагается, что метод TakeDamage определен в GoblinControl
+                goblinControl.TakeDamage(Mathf.RoundToInt(totalDamage));
+                Debug.Log("Dealt " + totalDamage + " damage to enemy!");
             }
         }
     }
 
-    // Визуализация области атаки
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -48,5 +53,14 @@ public class PlayerAttack : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    private WeaponModel GetCurrentWeaponModel()
+    {
+        if (attackPoint == null || attackPoint.childCount == 0)
+            return null;
+
+        Transform weapon = attackPoint.GetChild(0);
+        return weapon.GetComponent<WeaponModel>();
     }
 }

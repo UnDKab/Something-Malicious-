@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3647044058776458821}
   - component: {fileID: 2621825192777643230}
   - component: {fileID: 8515252028377667668}
+  - component: {fileID: 5266756965762734273}
   m_Layer: 6
   m_Name: Axe4
   m_TagString: Weapon
@@ -136,3 +137,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5266756965762734273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2831683187207543018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56d220434df23d4495e4e27b79ed647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 10
