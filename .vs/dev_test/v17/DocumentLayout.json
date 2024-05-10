@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ezio5\\dev_test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\rooms\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\rooms\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\rooms\\roomsplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\rooms\\roomsplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\rooms\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\rooms\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezio5\\dev_test\\Assets\\Rooms\\ForestPlacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Rooms\\Room.cs",
               "RelativeDocumentMoniker": "Assets\\Rooms\\Room.cs",
@@ -93,18 +93,17 @@
               "RelativeToolTip": "Assets\\Rooms\\Room.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowCwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T05:48:01.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T05:48:01.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RoomsPlacer.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Rooms\\RoomsPlacer.cs",
               "RelativeDocumentMoniker": "Assets\\Rooms\\RoomsPlacer.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Rooms\\RoomsPlacer.cs",
               "RelativeToolTip": "Assets\\Rooms\\RoomsPlacer.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAowEEAAAAJAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwD0AAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T05:04:00.602Z",
               "EditorCaption": ""

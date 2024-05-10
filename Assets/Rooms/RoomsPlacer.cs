@@ -14,13 +14,13 @@ public class RoomsPlacer : MonoBehaviour
 
     void Start()
     {
-        spawnedRooms = new Room[11, 11];
+        spawnedRooms = new Room[100, 100];
 
         // —оздаем стартовую комнату в центре массива (5, 5)
         spawnedRooms[5, 5] = Instantiate(StartingRoomPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
         // –азмещаем дополнительные комнаты
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 101; i++)
         {
             PlaceOneRoom();
         }
@@ -59,7 +59,7 @@ public class RoomsPlacer : MonoBehaviour
 
             if(ConnectToSomething(newRoom, position))
             {
-                newRoom.transform.position = new Vector3(position.x - 5, 0, position.y - 5) * 100;
+                newRoom.transform.position = new Vector3(position.x - 5, 0, position.y - 5) * 12;
                 spawnedRooms[position.x, position.y] = newRoom;
                 return;
             }
