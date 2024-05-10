@@ -369,6 +369,7 @@
 "Assets/Shoot.cs"
 "Assets/Stats.cs"
 "Assets/WeaponController.cs"
+"Assets/WeaponData.cs"
 "Assets/WeaponModel.cs"
 -langversion:9.0
 /deterministic

@@ -43,9 +43,16 @@ public class PickUpWeapon : MonoBehaviour
                 currentWeapon = hit.transform.gameObject;
                 currentWeapon.GetComponent<Collider>().isTrigger = true;
                 currentWeapon.GetComponent<Rigidbody>().isKinematic = true;
+
+                // ѕолучаем сохраненные координаты и повороты пивота оружи€
+                Vector3 pivotLocalPosition = currentWeapon.GetComponent<WeaponModel>().pivotLocalPosition;
+                Quaternion pivotLocalRotation = currentWeapon.GetComponent<WeaponModel>().pivotLocalRotation;
+
+                // ѕримен€ем сохраненные значени€ к позиции и ориентации оружи€ в руках игрока
                 currentWeapon.transform.parent = transform;
-                currentWeapon.transform.localPosition = Vector3.zero;
-                currentWeapon.transform.localEulerAngles = new Vector3(0f, -90f, 0f);
+                currentWeapon.transform.localPosition = pivotLocalPosition;
+                currentWeapon.transform.localRotation = pivotLocalRotation;
+
                 canPickUp = true;
                 if (playerAttack != null)
                 {
@@ -60,11 +67,16 @@ public class PickUpWeapon : MonoBehaviour
         }
     }
 
+
     void Drop()
     {
+        // ”дал€ем оружие из родительского объекта
         currentWeapon.transform.parent = null;
+
+        // ¬озвращаем оружию его физические свойства
         currentWeapon.GetComponent<Rigidbody>().isKinematic = false;
         currentWeapon.GetComponent<Collider>().isTrigger = false;
+
         canPickUp = false;
         currentWeapon = null;
 

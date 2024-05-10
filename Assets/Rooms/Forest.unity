@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,6 +240,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1996531603}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponStats.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e41658d37ed099d4f93e96d1c2daf4b4, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: cf2ae8c8bf46f8b4ab3a14a37203f2ff, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 06b0c65c91ca7e047a5a19e7f85c63cd, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: c1393c582645a2f4c9cb03d32e2238db, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 735619dbae691a04eb86be7ac5830851, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2859e99c014ace6478f0391a582448dd, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponData.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4afb918fb49f33c4f85fb392eb40b258, type: 2}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[0]
+      value: 
+      objectReference: {fileID: 1411064141223838398, guid: b1718da3e7f3a154bbe20b0040a6d6b5, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[1]
+      value: 
+      objectReference: {fileID: 5397937562665173170, guid: 69ccc6644cc8fa84c9fbbf8e3a557175, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[2]
+      value: 
+      objectReference: {fileID: 1578837816929710233, guid: 2bf415b6422616b439280a8f0ff9bdf3, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[3]
+      value: 
+      objectReference: {fileID: 1411064141223838398, guid: b1718da3e7f3a154bbe20b0040a6d6b5, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[4]
+      value: 
+      objectReference: {fileID: 1578837816929710233, guid: fb24b5a59f5cc4047a5dd373ced37611, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[5]
+      value: 
+      objectReference: {fileID: 4647484222827807199, guid: 61bba668ba94ac940868dd91831c43f1, type: 3}
+    - target: {fileID: 5348698683423294631, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
+      propertyPath: weaponModels.Array.data[6]
+      value: 
+      objectReference: {fileID: 1879121815367570278, guid: bdd5b280837bb854f91c969114e78e73, type: 3}
     - target: {fileID: 6116547311511341728, guid: eb0f6b02596ec0a479587554c9ae1c26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.231388
@@ -310,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 1996531602}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 162.89706, y: 113.78585, z: 101.39045}
+  m_LocalPosition: {x: 40.92, y: 1.8, z: 46.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -86,7 +86,16 @@ public class GoblinControl : MonoBehaviour
         Debug.Log("Goblin attacks the target!");
 
         // Нанесение урона цели
-        target.GetComponent<Player>().TakeDamage(NPCStats.damage);
+        Player player = target.GetComponent<Player>();
+        if (player != null)
+        {
+            player.TakeDamage(NPCStats.damage);
+            Debug.Log("Goblin deals " + NPCStats.damage + " damage to the player!");
+        }
+        else
+        {
+            Debug.LogWarning("Goblin failed to find player target!");
+        }
 
         // Установка кулдауна после атаки
         canAttack = false;
@@ -128,11 +137,13 @@ public class GoblinControl : MonoBehaviour
         {
             Die();
         }
+        Debug.Log("Goblin takes " + damage + " damage! Remaining health: " + NPCStats.maxHealth);
     }
 
     // Метод для обработки смерти гоблина
     void Die()
     {
+        Debug.Log("Goblin is defeated!");
         Destroy(gameObject);
     }
 }

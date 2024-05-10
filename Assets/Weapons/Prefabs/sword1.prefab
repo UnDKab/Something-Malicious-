@@ -171,3 +171,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 10
+  pivotLocalPosition: {x: 0, y: 0, z: 0}
+  pivotLocalRotation: {x: 0, y: 0, z: 0, w: 0}
