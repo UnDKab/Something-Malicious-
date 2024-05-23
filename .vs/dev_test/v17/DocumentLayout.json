@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ezio5\\dev_test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\boss_forest\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\boss_forest\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|c:\\users\\ezio5\\dev_test\\assets\\boss_forest\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\boss_forest\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\boss_forest\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|C:\\Users\\ezio5\\dev_test\\assets\\boss_forest\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{726CBA3D-EB69-1B66-FD29-40C860F5510C}|Assembly-CSharp.csproj|solutionrelative:assets\\boss_forest\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
@@ -110,21 +110,19 @@
               "RelativeToolTip": "Assets\\Boss_Forest\\Projectile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T09:41:06.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T09:41:06.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BossController.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Boss_Forest\\BossController.cs",
               "RelativeDocumentMoniker": "Assets\\Boss_Forest\\BossController.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Boss_Forest\\BossController.cs",
               "RelativeToolTip": "Assets\\Boss_Forest\\BossController.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAiwHgAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T09:39:19.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T09:39:19.432Z"
             },
             {
               "$type": "Document",
@@ -318,13 +316,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeDocumentMoniker": "Assets\\Stats.cs",
               "ToolTip": "C:\\Users\\ezio5\\dev_test\\Assets\\Stats.cs",
               "RelativeToolTip": "Assets\\Stats.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowHEAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T15:10:21.966Z",
               "EditorCaption": ""

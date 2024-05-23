@@ -136,9 +136,6 @@ PrefabInstance:
       addedObject: {fileID: 7023299930942257853}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3e6e751af6fafc439e2a0ccc9beca5a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5840163765995885475}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3e6e751af6fafc439e2a0ccc9beca5a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8170320571618388112}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3e6e751af6fafc439e2a0ccc9beca5a, type: 3}
       insertIndex: -1
@@ -192,14 +189,6 @@ MonoBehaviour:
     m_Bits: 8
   attackRange: 10
   player: {fileID: 4029824701948356116, guid: 54948743110f67246a8972e0bc8fd95a, type: 3}
---- !u!33 &5840163765995885475
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349065843413254423}
-  m_Mesh: {fileID: -3304010343010839007, guid: f3e6e751af6fafc439e2a0ccc9beca5a, type: 3}
 --- !u!23 &8170320571618388112
 MeshRenderer:
   m_ObjectHideFlags: 0

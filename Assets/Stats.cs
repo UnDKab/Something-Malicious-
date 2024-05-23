@@ -1,5 +1,6 @@
-using System;
+using System.Collections;
 using UnityEngine;
+using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -111,13 +112,18 @@ public class Player : MonoBehaviour
         Debug.Log($"Player has died! Current run: {runCount}"); // Выводим сообщение о номере текущего забега
 
         // Переход на сцену MainMenu
-        GoToMainMenu();
+        StartCoroutine(GoToMainMenu());
     }
 
     // Переход на сцену MainMenu
-    private void GoToMainMenu()
+    private IEnumerator GoToMainMenu()
     {
+        yield return new WaitForSeconds(1); // Можно добавить задержку для завершения всех операций
         SceneManager.LoadScene("MainMenu");
+
+        // Убедитесь, что курсор видим и не заблокирован
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     // Метод для обновления HP бара
@@ -170,6 +176,7 @@ public class WizardMask : IMask
         player.HasPassiveSkill = false;
     }
 }
+
 public class WarriorMask : IMask
 {
     public void ApplyMask(Player player)
